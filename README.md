@@ -1,6 +1,6 @@
 # ResQ
 
-An catalog and complaint lodging app for [ResQ Technologies Pvt. Ltd.](http://resqtechnologies.in).
+An catalog and complaint lodging app for [ResQ Technologies Pvt. Ltd.](http://resqtechnologies.in)
 
 [![PlayStore][playstore-image]][playstore-url]
 
