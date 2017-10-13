@@ -1,0 +1,349 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.resq.resqserviceapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:paddingBottom="35dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:elevation="0dp"
+            app:cardElevation="4dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ups9145Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/usp1" />
+
+                <Button
+                    android:id="@+id/ups9145Complain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/ups9145View"
+                    android:layout_toStartOf="@+id/ups9145View"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:onClick="cardButtonClickListener"
+                    android:text="complain" />
+
+                <Button
+                    android:id="@+id/ups9145View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="cardButtonClickListener"
+                    android:text="view" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/ups9145Complain"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/ups9145Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/ups9145Image"
+                    android:layout_toRightOf="@+id/ups9145Image"
+                    android:text="Eaton 9145"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ups9145Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ups9145Title"
+                    android:layout_toEndOf="@+id/ups9145Image"
+                    android:layout_toRightOf="@+id/ups9145Image"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:padding="15dp"
+                    android:text="Reliable high perfomance power protection for critical applications" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:elevation="0dp"
+            app:cardElevation="4dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ups9395Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/ups2" />
+
+                <Button
+                    android:id="@+id/ups9395Complain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/ups9395View"
+                    android:layout_toStartOf="@+id/ups9395View"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:onClick="cardButtonClickListener"
+                    android:text="Complain" />
+
+                <Button
+                    android:id="@+id/ups9395View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="cardButtonClickListener"
+                    android:text="view" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/ups9395Complain"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/ups9395Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/ups9395Image"
+                    android:layout_toRightOf="@+id/ups9395Image"
+                    android:text="Eaton 9395"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ups9395Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ups9395Title"
+                    android:layout_toEndOf="@+id/ups9395Image"
+                    android:layout_toRightOf="@+id/ups9395Image"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:padding="15dp"
+                    android:text="Double conversion provides the highest level of protection available by isolating the output power from all input anomalies." />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:elevation="0dp"
+            app:cardElevation="4dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ups9390Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/ups3" />
+
+                <Button
+                    android:id="@+id/ups9390Complain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/ups9390View"
+                    android:layout_toStartOf="@+id/ups9390View"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:onClick="cardButtonClickListener"
+                    android:text="Complain" />
+
+                <Button
+                    android:id="@+id/ups9390View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="cardButtonClickListener"
+                    android:text="view" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/ups9390Complain"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/ups9390Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/ups9390Image"
+                    android:layout_toRightOf="@+id/ups9390Image"
+                    android:text="Eaton 9390"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ups9390Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ups9390Title"
+                    android:layout_toEndOf="@+id/ups9390Image"
+                    android:layout_toRightOf="@+id/ups9390Image"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:padding="15dp"
+                    android:text="The industries best combination of efficiency, management of THD, power factor and power  protection" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="50dp"
+            android:clickable="false"
+            android:elevation="0dp"
+            app:cardElevation="4dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ups93EImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/ups4" />
+
+                <Button
+                    android:id="@+id/ups93EComplain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/ups93EView"
+                    android:layout_toStartOf="@+id/ups93EView"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:onClick="cardButtonClickListener"
+                    android:text="Complain" />
+
+                <Button
+                    android:id="@+id/ups93EView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="cardButtonClickListener"
+                    android:text="view" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/ups93EComplain"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/ups93ETitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/ups93EImage"
+                    android:layout_toRightOf="@+id/ups93EImage"
+                    android:text="Eaton 93E"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/OilCooledContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ups93ETitle"
+                    android:layout_toEndOf="@+id/ups93EImage"
+                    android:layout_toRightOf="@+id/ups93EImage"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:padding="15dp"
+                    android:text="The Eaton® 93E UPS delivers superior power protection for everexpanding loads in today's space-constrained data centres." />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

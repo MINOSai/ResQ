@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.resq.resqserviceapp.MainActivity">
+    <item
+        android:id="@+id/newComplaintButton"
+        android:orderInCategory="100"
+        android:title="New complaint"/>
+    <item
+        android:id="@+id/accountedit"
+        android:orderInCategory="200"
+        android:title="Edit contact details"/>
+    <item
+        android:id="@+id/complaintHistory"
+        android:orderInCategory="300"
+        android:title="Complaint history"/>
+    <item
+        android:id="@+id/callMenuOption"
+        app:showAsAction="always"
+        android:orderInCategory="400"
+        android:icon="@drawable/phone"
+        android:title="Complaint history"/>
+</menu>

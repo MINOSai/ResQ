@@ -1,0 +1,263 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ParentScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.resq.resqserviceapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:paddingBottom="35dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:elevation="0dp"
+            app:cardElevation="4dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/stabilizerAirCooledImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/aircooledstabilizer" />
+
+                <Button
+                    android:id="@+id/stabilizerAirCooledComplain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/stabilizerAirCooledView"
+                    android:layout_toStartOf="@+id/stabilizerAirCooledView"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:onClick="cardButtonClickListener"
+                    android:text="Complain" />
+
+                <Button
+                    android:id="@+id/stabilizerAirCooledView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="cardButtonClickListener"
+                    android:text="view" />
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/stabilizerAirCooledComplain"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/stabilizerAirCooledTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/stabilizerAirCooledImage"
+                    android:layout_toRightOf="@+id/stabilizerAirCooledImage"
+                    android:text="Air Cooled"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/stabilizerAirCooledContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stabilizerAirCooledTitle"
+                    android:layout_toEndOf="@+id/stabilizerAirCooledImage"
+                    android:layout_toRightOf="@+id/stabilizerAirCooledImage"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:padding="15dp"
+                    android:text="Acailable from 3 kva to 1500 kva. Wide input voltage drive ciruit. High speed of correction and quick response. High efficiency Load Power factor." />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:elevation="0dp"
+            app:cardElevation="4dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/stabilizerOilCooledImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view22"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/oilcooledstabilizer" />
+
+                <Button
+                    android:id="@+id/stabilizerOilCooledComplain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/stabilizerOilCooledView"
+                    android:layout_toStartOf="@+id/stabilizerOilCooledView"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:onClick="cardButtonClickListener"
+                    android:text="Complain" />
+
+                <Button
+                    android:id="@+id/stabilizerOilCooledView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="cardButtonClickListener"
+                    android:text="view" />
+
+                <View
+                    android:id="@+id/view22"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/stabilizerOilCooledComplain"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/stabilizerOilCooledTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/stabilizerOilCooledImage"
+                    android:layout_toRightOf="@+id/stabilizerOilCooledImage"
+                    android:text="Oil Cooled"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/stabilizerOilCooledContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stabilizerOilCooledTitle"
+                    android:layout_toEndOf="@+id/stabilizerOilCooledImage"
+                    android:layout_toRightOf="@+id/stabilizerOilCooledImage"
+                    android:padding="15dp"
+                    android:text="Recommended for heavy loads like CNC meachinaries, injection moulding, packaging and processing industries, centralized air conditioners and medical equipments." />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="50dp"
+            android:clickable="false"
+            android:elevation="0dp"
+            app:cardElevation="4dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/stabilizerUltraisolationImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view33"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/ultraisolation" />
+
+                <Button
+                    android:id="@+id/stabilizerUltraisolationComplain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/stabilizerUltraisolationView"
+                    android:layout_toStartOf="@+id/stabilizerUltraisolationView"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:onClick="cardButtonClickListener"
+                    android:text="Complain" />
+
+                <Button
+                    android:id="@+id/stabilizerUltraisolationView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:onClick="cardButtonClickListener"
+                    android:text="view" />
+
+                <View
+                    android:id="@+id/view33"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/stabilizerUltraisolationComplain"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/stabilizerUltraisolationTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/stabilizerUltraisolationImage"
+                    android:layout_toRightOf="@+id/stabilizerUltraisolationImage"
+                    android:text="Ultra Isolation"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/stabilizerUltraisolationContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stabilizerUltraisolationTitle"
+                    android:layout_toEndOf="@+id/stabilizerUltraisolationImage"
+                    android:layout_toRightOf="@+id/stabilizerUltraisolationImage"
+                    android:padding="15dp"
+                    android:text="Used for CNC machines, telecommunication equipments, medical equipments and precision instruments." />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
